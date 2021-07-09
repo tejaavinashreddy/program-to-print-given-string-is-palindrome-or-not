@@ -1,0 +1,18 @@
+import java.util.*;   
+class Solution 
+{  
+   public static void main(String args[])  
+   {  
+      String u, rev = "";  
+      Scanner in = new Scanner(System.in);   
+      System.out.println("Enter a string");  
+      u = in.nextLine();   
+      int length =u.length();   
+      for ( int i = length - 1; i >= 0; i-- )  
+         rev = rev + u.charAt(i);  
+      if (u.equals(rev))  
+         System.out.println(" string is a palindrome.");  
+      else  
+         System.out.println("string is not a palindrome.");   
+   }  
+}  
